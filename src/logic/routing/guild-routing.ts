@@ -34,7 +34,7 @@ export class GuildRoutingModule {
         take(1),
       )
       .subscribe(dtos => {
-        res.send(dtos);
+        res.send({ guilds: dtos });
       }, next);
   };
 
